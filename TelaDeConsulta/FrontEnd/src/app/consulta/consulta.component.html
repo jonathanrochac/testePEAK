@@ -1,0 +1,14 @@
+<h2>Tela de Consulta</h2>
+<div>
+  <label for="id">ID:</label>
+  <input type="number" id="id" [(ngModel)]="id">
+</div>
+<button (click)="buscar()">Buscar</button>
+<div *ngIf="nome">
+  <h3>Nome encontrado:</h3>
+  <p>{{ nome }}</p>
+</div>
+<div *ngIf="erro">
+  <h3>Erro:</h3>
+  <p>{{ erro }}</p>
+</div>
